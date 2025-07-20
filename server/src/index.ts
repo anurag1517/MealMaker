@@ -4,7 +4,7 @@ import dotenv from"dotenv"
 import connectDB from"./config/db"
 import recommendRoutes from"./routes/recommend"
 
-const PORT=process.env.PORT||5000;
+const PORT=5000;
 
 
 dotenv.config()
@@ -13,7 +13,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173", 
-      "https://meal-maker-lyart.vercel.app/", 
+      "https://meal-maker-lyart.vercel.app", 
     ],
     credentials: true,
   })
