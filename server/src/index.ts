@@ -6,9 +6,18 @@ import recommendRoutes from"./routes/recommend"
 
 const PORT=process.env.PORT||5000;
 
+
 dotenv.config()
 const app=express()
-app.use(cors())
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173", 
+      "https://meal-maker-lyart.vercel.app/", 
+    ],
+    credentials: true,
+  })
+);
 app.use(express.json())
 app.use("/api/recommend",recommendRoutes)
 
