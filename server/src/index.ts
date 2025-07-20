@@ -15,7 +15,6 @@ app.use(
       "http://localhost:5173", 
       "https://meal-maker-lyart.vercel.app", 
     ],
-    credentials: true,
   })
 );
 app.use(express.json())
