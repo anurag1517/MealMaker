@@ -11,7 +11,6 @@
     "start": "node dist/src/index.js",
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "build": "tsc",
-    "postbuild": "cp -r src/data dist/data",
     "test": "jest",
     "watch": "tsc -w"
   },
