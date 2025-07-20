@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.4",
+    "zod": "^4.0.5"
+  },
+  "scripts": {
+    "start": "node dist/src/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "postbuild": "cp -r src/data dist/data",
+    "test": "jest",
+    "watch": "tsc -w"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.15",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
+}
